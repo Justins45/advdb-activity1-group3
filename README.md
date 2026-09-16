@@ -1,6 +1,6 @@
 # advdb-activity1-group3
 # Design process and modelling tool
-Our group designed a logical database model to manage the operations of a local gym. We identified the main entities based on the business requirements and used ERDPlus to create our EERD diagram. We used a partial, disjoint specialization for the Staff and Trainer entities, resolving many to many relationships using the associative booking entity.
+Our group designed a logical database model to manage the operations of a local gym. We identified the main entities based on the business requirements and used LucidChart to create our EERD diagram. We used a partial, disjoint specialization for the Staff and Trainer entities, resolving many to many relationships using the associative booking entity.
 
 # Business Rules
 - **Class Scheduling**: Each class can be in zero to many scheduled classes. Each scheduled class can only be lined to one class.
