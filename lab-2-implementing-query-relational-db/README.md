@@ -52,19 +52,20 @@ Based on the clinic's business rules, we created an EERD, implemented the databa
 ### Required Queries
 
 **1. Total number of patients in the database**
-<img width="555" height="291" alt="total-patients" src="https://github.com/user-attachments/assets/4a07d7ca-dbbe-4ad4-b361-b6746412478d" />
+<img width="600" height="291" alt="total-patients" src="https://github.com/user-attachments/assets/4a07d7ca-dbbe-4ad4-b361-b6746412478d" />
 
 
 **2. Patients who visited the clinic last month**
 <img width="718" height="415" alt="patient-last-month-visit" src="https://github.com/user-attachments/assets/0ff97d42-87c3-49b1-934e-066ab9d2d531" />
 
 **3. Total dollar amount billed to all patients**
+
 <img width="600" height="361" alt="total-bills" src="https://github.com/user-attachments/assets/bc719bc3-b201-4055-b56d-b617236dc3eb" />
 
 ### Custom Queries
 
 **4. Demonstration of aggregation (SUM, COUNT, AVG)**
-<img width="395" height="859" alt="aggragate-function-2" src="https://github.com/user-attachments/assets/dbf026da-4a61-4a1e-8132-b2cf3d4c4126" />
+<img width="600" height="859" alt="aggragate-function-2" src="https://github.com/user-attachments/assets/dbf026da-4a61-4a1e-8132-b2cf3d4c4126" />
 <img width="352" height="865" alt="aggragate-function-1" src="https://github.com/user-attachments/assets/4245b666-ae87-49eb-81c6-5202adabc85c" />
 
 
