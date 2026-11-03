@@ -25,9 +25,9 @@ and title descriptions are stores as vectors so viewers can search by meaning.
 
 ## Schema Diagram 
 
-Built in Lucidchart and exported to `diagram/schema.pdf`
+Built in Lucidchart and exported to `schema/schema.pdf`
 
-![Schema Diagram](diagram/schema.png)
+![Schema Diagram](schema/schema.png)
 
 ## Screenshots / Sample Output
 
