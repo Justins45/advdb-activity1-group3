@@ -37,8 +37,8 @@ Sample Data Results
 
 JSONB Query Results
 
-![JSONB Query Results](screenshots/jsonb-query-result.png)
+![JSONB Query Results](screenshots/JSONB-query-1-results.png)
 
 Vector Query Results
 
-![Vector Query Results](screenshots/vector-query-results.png)
+![Vector Query Results](screenshots/VECTOR-query-1-results.png)
