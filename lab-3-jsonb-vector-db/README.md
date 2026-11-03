@@ -8,10 +8,10 @@ and title descriptions are stores as vectors so viewers can search by meaning.
 
 | Tool | Purpose |
 |------|---------|
-| PostgreSQL [version] | Database engine |
-| pgAdmin 4 [version] | Query building, running SQL, inspecting tables |
+| PostgreSQL | Database engine |
+| pgAdmin 4 | Query building, running SQL, inspecting tables |
 | Lucidchart | Schema / ER diagram |
-| [pgvector, if used] | Vector columns and similarity search |
+| pgvector | Vector columns and similarity search |
 
 ## Enviorment Setup
 
@@ -19,8 +19,8 @@ and title descriptions are stores as vectors so viewers can search by meaning.
 2. Insure that pgadmin4 is installed
 3. Create empty Database
     1. `sql/01_tables.sql` (creates schema)
-    2. `sql/02_sample_data.sql` (inserts sample rows)
-    3. `sql/03_vector_data.sql` (generated vector data from provided .ipynb file) 
+    2. `sql/02_vector_data.sql` (generated vector data from provided .ipynb file) 
+    3. `sql/03_sample_data.sql` (inserts sample rows)
     4. `sql/04_queries.sql` (run queries one at a time to see results)
 
 ## Schema Diagram 

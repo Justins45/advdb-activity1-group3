@@ -3,6 +3,25 @@
 -- (activity has a foreign key to titles, so titles must already exist).
 -- Safe to run again: tables and indexes are only created if missing.
 
+CREATE EXTENSION IF NOT EXISTS vector;
+
+DROP TABLE IF EXISTS search_phrases;
+CREATE TABLE search_phrases (
+    phrase_id integer PRIMARY KEY,
+    phrase    text        NOT NULL,
+    embedding vector(384) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS titles (
+    title_id     integer PRIMARY KEY,
+    title        text    NOT NULL,
+    kind         text    NOT NULL,
+    release_year integer,
+    genre        text,
+    description  text    NOT NULL,
+    embedding    vector(384)
+);
+
 -- ---------------------------------------------------------------
 -- users: structured profile data in ordinary columns,
 --        per-user viewing preferences in JSONB
