@@ -8,7 +8,7 @@
 }
 
 
--- activity.events_data JSON document example:
+-- activity.event_data JSON document example:
 -- Example A:
 {
     "event_type": "rate",
