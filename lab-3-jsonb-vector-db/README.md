@@ -30,3 +30,15 @@ Built in Lucidchart and exported to `diagram/schema.pdf`
 ![Schema Diagram](diagram/schema.png)
 
 ## Screenshots / Sample Output
+
+Sample Data Results
+
+![Sample Data Results](screenshots/sample-data-results.png)
+
+JSONB Query Results
+
+![JSONB Query Results](screenshots/jsonb-query-result.png)
+
+Vector Query Results
+
+![Vector Query Results](screenshots/vector-query-results.png)
