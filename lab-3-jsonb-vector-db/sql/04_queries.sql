@@ -73,3 +73,31 @@ AND NOT EXISTS (
 )
 ORDER BY similarity
 LIMIT 5;
+
+-- Vector Query 3
+-- Written by Jazmin
+-- Closest pairs of titles that are labeled with different genres
+SELECT a.title AS title_a,
+       a.genre AS genre_a,
+       b.title AS title_b,
+       b.genre AS genre_b,
+       round((a.embedding <=> b.embedding)::numeric, 4) AS cosine_distance
+FROM titles AS a
+JOIN titles AS b
+  ON a.title_id < b.title_id --each pair only once, nver a title with itself
+  AND a.genre <> b.genre --only corss genre pairs
+ORDER BY a.embedding <=> b.embedding
+LIMIT 5;
+
+-- Vector Query 4
+-- Written by Jazmin
+-- Five titles closest in meaning to "Glacier Station"
+SELECT t.title_id,
+       t.title,
+       t.kind,
+       t.genre,
+       round((t.embedding <=> (SELECT embedding FROM titles WHERE title_id = 28))::numeric, 4) AS cosine_distance
+FROM titles t
+WHERE t.title_id <> 28 --leave out the title itself (its distance to itself is 0)
+ORDER BY t.embedding <=> (SELECT embedding FROM titles WHERE title_id = 28)
+LIMIT 5;
